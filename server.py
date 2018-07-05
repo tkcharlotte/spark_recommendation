@@ -21,7 +21,7 @@ sc = SparkContext()
 def index():
 	u = request.values.get("u")
 	if request.method == 'POST':
-		f = open("./ex.txt","r")
+		f = open("./extract.txt","r")
 		s= f.read()
 		if(s.find(str(u))!= -1):
 			f = open("./u.data","r")
